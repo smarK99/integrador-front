@@ -29,14 +29,40 @@
     <main>
       <div class="container-view">
         <aside class="list-aside">
-          <h2>Categoria</h2>
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M400-240v-80h160v80H400ZM240-440v-80h480v80H240ZM120-640v-80h720v80H120Z"/></svg>
+          <h2>Categoria<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M400-240v-80h160v80H400ZM240-440v-80h480v80H240ZM120-640v-80h720v80H120Z"/></svg></h2>
           <ul id="list-filter"></ul>
         </aside>
         <div class="store">
 
         </div>
       </div>
+
+      <!--POP-UP-->
+      <div class="modal-container-pp" id="modal">
+        <div class="modal-container">
+          <div class="modal-title">
+            <h2>Agregar producto</h2>
+          </div>
+          <div class="modal-inputs-container">
+            <input type="text" placeholder="Ingrese un nombre"></input>
+            <input type="text" placeholder="Ingrese una imagen" id="img"></input>
+            <input type="number" placeholder="precio" id="precio" value="0"></input>
+            <select id="categoria">
+              <option>Seleccione una categoría</option>
+              <option>Hamburgesas</option>
+              <option>Papas</option>
+              <option>Gaseosas</option>
+            </select>
+          </div>
+          <div class="modal-buttons">
+            <button class="btn-modal cancel" id="btn-cancel">Cancelar</button>
+            <button class="btn-modal accept" id="btn-accept">Aceptar</button>
+            <button class="btn-modal delete" id="btn-delete">Eliminar</button>
+          </div>
+        </div>
+      </div>
+
+
     </main>
     
     <script type="module" src="/main.js"></script>
