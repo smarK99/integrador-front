@@ -128,8 +128,9 @@
     color: white;
 }
 
+/* STORE */
 .store{
-    background-color: rgb(94, 66, 108);
+    background-color: rgb(79, 79, 80);
     height: 92vh;
 }
 
@@ -140,7 +141,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(1px);
@@ -153,6 +154,9 @@
     border: 1px black solid;
     box-shadow: 5px 2px 10px 10px #00000085;
     border-radius: .4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .modal-inputs-container{
@@ -172,7 +176,7 @@
 }
 
 .modal-inputs-container select{
-    width: 75%;
+    width: 74%;
     border: 1px solid grey;
     padding: 0.4rem;
     border-radius: 0.4rem;
@@ -184,11 +188,48 @@
 }
 
 .modal-buttons{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 2vh;
 }
+
+.btn-modal{
+    padding: 0.6rem;
+    border: 1px solid grey;
+    background-color: rgb(208, 210, 210);
+    border-radius: 0.4rem;
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+.cancel:hover{
+    cursor: pointer;
+    background-color: #ffff008e;
+    color: rgb(0, 0, 0);
+    border: 1px rgb(0, 0, 0) solid;
+    transition: 0.25s ease;
+}
+
+.delete:hover{
+    cursor: pointer;
+    background-color: #ff0000b7;
+    color: white;
+    border: 1px rgb(0, 0, 0) solid;
+    transition: 0.25s ease;
+}
+
+.accept:hover{
+    cursor: pointer;
+    background-color: #09ff0096;
+    color: white;
+    border: 1px rgb(0, 0, 0) solid;
+    transition: 0.25s ease;
+}
+
+
+
 
 

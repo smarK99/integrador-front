@@ -20,7 +20,7 @@
             <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"/></svg></button>
           </div>
           <div class="cs" id="cs2">
-            <button class="btn-add"><svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M444-444H240v-72h204v-204h72v204h204v72H516v204h-72v-204Z"/></svg></button>
+            <button class="btn-add" id="btn-add"><svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M444-444H240v-72h204v-204h72v204h204v72H516v204h-72v-204Z"/></svg></button>
           </div>
         </div>
       </div>
@@ -32,8 +32,7 @@
           <h2>Categoria<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M400-240v-80h160v80H400ZM240-440v-80h480v80H240ZM120-640v-80h720v80H120Z"/></svg></h2>
           <ul id="list-filter"></ul>
         </aside>
-        <div class="store">
-
+        <div class="store" id="store">
         </div>
       </div>
 
@@ -44,10 +43,10 @@
             <h2>Agregar producto</h2>
           </div>
           <div class="modal-inputs-container">
-            <input type="text" placeholder="Ingrese un nombre"></input>
-            <input type="text" placeholder="Ingrese una imagen" id="img"></input>
-            <input type="number" placeholder="precio" id="precio" value="0"></input>
-            <select id="categoria">
+            <input type="text" placeholder="Ingrese un nombre" id="nombre-prod"></input>
+            <input type="text" placeholder="Ingrese una imagen" id="img-prod"></input>
+            <input type="number" placeholder="precio" id="precio-prod" value="0"></input>
+            <select id="categoria-prod">
               <option>Seleccione una categoría</option>
               <option>Hamburgesas</option>
               <option>Papas</option>
@@ -56,8 +55,8 @@
           </div>
           <div class="modal-buttons">
             <button class="btn-modal cancel" id="btn-cancel">Cancelar</button>
-            <button class="btn-modal accept" id="btn-accept">Aceptar</button>
             <button class="btn-modal delete" id="btn-delete">Eliminar</button>
+            <button class="btn-modal accept" id="btn-accept">Aceptar</button>
           </div>
         </div>
       </div>
