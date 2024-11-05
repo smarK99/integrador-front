@@ -1,3 +1,4 @@
+import { setProductsLocalStorage } from "./src/persistence/localStorage";
 import { renderCategories } from "./src/services/categories";
 import "./style.css";
 
@@ -53,7 +54,7 @@ const handleSaveModifyElements = () => {
         categoria
     }
 
-    localStorage.setItem("producto", object)
+    setProductsLocalStorage(object);
 
     //console.log(object)
 
