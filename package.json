@@ -1,5 +1,5 @@
 {
-  "name": "integrador-front",
+  "name": "practicas",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,6 +9,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^5.4.9"
+    "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "install": "^0.13.0",
+    "sweetalert2": "^11.10.4"
   }
 }
